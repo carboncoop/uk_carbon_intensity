@@ -1,0 +1,13 @@
+{
+    "domain": "uk_carbon_intensity",
+    "name": "Uk Carbon Intensity",
+    "documentation": "https://www.example.com",
+    "dependencies": [],
+    "codeowners": [
+        "Peter Armstrong"
+    ],
+    "requirements": [
+        "requests"
+    ],
+    "config_flow": true
+}
