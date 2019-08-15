@@ -1,5 +1,6 @@
 """Binary sensor platform for uk carbon intensity"""
 import logging
+from datetime import timedelta
 
 import requests
 from homeassistant.components.binary_sensor import BinarySensorDevice
@@ -9,6 +10,8 @@ from homeassistant.helpers.typing import HomeAssistantType
 from . import const
 
 _LOGGER = logging.getLogger(__name__)
+
+SCAN_INTERVAL = timedelta(minutes=30)
 
 
 async def async_setup_entry(
