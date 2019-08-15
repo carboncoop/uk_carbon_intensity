@@ -1,0 +1,14 @@
+{
+  "domain": "uk_carbon_intensity",
+  "name": "Uk Carbon Intensity",
+  "documentation": "https://github.com/carboncoop/uk_carbon_intensity",
+  "dependencies": [],
+  "codeowners": [
+    "@peterete0p",
+    "@carboncoop"
+  ],
+  "requirements": [
+    "requests"
+  ],
+  "config_flow": true
+}

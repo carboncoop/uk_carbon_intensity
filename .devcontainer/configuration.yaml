@@ -1,0 +1,9 @@
+default_config:
+logger:
+  default: error
+  logs:
+    custom_components.uk_carbon_intensity: debug
+
+
+
+uk_carbon_intensity:

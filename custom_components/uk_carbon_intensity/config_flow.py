@@ -1,3 +1,4 @@
+"""Config flow for Uk Carbon Intensity."""
 import logging
 
 import requests
