@@ -3,6 +3,10 @@ _Component to integrate with the [UK Carbon Intensity API][uk_carbon_intensity_a
 ## Carbon Intensity API
 The [UK Carbon Intensity API][uk_carbon_intensity_api] shows the carbon intensity of the electricity on the UK grid.
 
+The integration finds your nearest "outcode" (first bit of a postcode) from your location, and uses this to get your regional carbon intensity.
+
+If your outcode is not available, it will report the overall UK grid carbon intensity.
+
 ## Why?
 This integration may be useful to help you run home automation tasks or devices only when the grid is full of renewable energy.
 
@@ -12,6 +16,8 @@ Platform        | Description
 ----------------|-------------------------------------------------------
 `binary_sensor` | `True` if the carbon intensity is `low` or `very low`.
 
+
+![example][exampleimg]
 
 ## Installation
 
@@ -55,3 +61,4 @@ This project uses a [blueprint] for Home Assistant custom component repositories
 ***
 [blueprint]: https://github.com/custom-components/blueprint
 [uk_carbon_intensity_api]: https://carbonintensity.org.uk/
+[exampleimg]: example.png
