@@ -31,8 +31,6 @@ class UkCarbonIntensityFlowHandler(config_entries.ConfigFlow):
 def _get_outcode_for_coords(lat, lon):
     response = requests.get(f"https://api.postcodes.io/outcodes?lon={lon}&lat={lat}")
     response.raise_for_status()
-    try:
+    if bool(response.json()["result"]):
         outcode = response.json()["result"][0]["outcode"]
         return outcode
-    except KeyError:
-        _LOGGER.info("outcode not found")
