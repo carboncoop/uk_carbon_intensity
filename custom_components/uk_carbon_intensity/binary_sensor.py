@@ -26,6 +26,7 @@ class UkCarbonIntensitySensor(BinarySensorDevice):
         self._name = const.BINARY_SENSOR_NAME
         self._state = False
         self._attributes = {}
+        self.update()
 
     @property
     def name(self):
@@ -42,6 +43,7 @@ class UkCarbonIntensitySensor(BinarySensorDevice):
     def update(self):
         outcode = self.hass.data[const.DOMAIN][const.OUTCODE]
         if not outcode:
+            _LOGGER.warning("Can't find your outcode, using UK average")
             response = requests.get("https://api.carbonintensity.org.uk/intensity")
             response.raise_for_status()
             intensity = response.json()["data"][0]["intensity"]

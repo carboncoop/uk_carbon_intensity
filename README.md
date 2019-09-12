@@ -26,10 +26,9 @@ Platform        | Description
 3. In the `custom_components` directory (folder) create a new folder called `uk_carbon_intensity`.
 4. Download _all_ the files from the `custom_components/uk_carbon_intensity/` directory (folder) in this repository.
 5. Place the files you downloaded in the new directory (folder) you created.
-6. Restart Home Assistant
-7. Choose:
-   - Add `uk_carbon_intensity:` to your HA configuration.
-   - In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "UK Carbon Intensity"
+6. Add `uk_carbon_intensity:` to your HA configuration.
+7. Restart Home Assistant
+8. In the HA UI go to "Configuration" -> "Integrations" click "+" and search for "UK Carbon Intensity"
 
 Using your HA configuration directory (folder) as a starting point you should now also have this:
 
